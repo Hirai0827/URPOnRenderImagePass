@@ -11,17 +11,6 @@ namespace URPOnRenderImagePass
         [SerializeField] private Material vignette;
         [Range(0,10)]
         [SerializeField] private float val;
-        // Start is called before the first frame update
-        void Awake()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
 
         public void OnPostProcess(CommandBuffer cmd, RenderTargetHandle src, RenderTargetHandle dest,RenderingData renderingData)
         {
